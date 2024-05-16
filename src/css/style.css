@@ -1,0 +1,96 @@
+/* set default */
+html {
+    padding: 0;
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+    line-height: 1.5;
+}
+body {
+    font-family: inherit;
+    line-height: inherit;
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+/* set css header menu */
+.user-header{
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;  
+    background-color: #fff; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+.user-header .navbar .nav-logo img {
+    margin-right: 1em;
+    height: 90px !important;
+}
+.user-header .navbar li{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    flex-grow: 12;
+}
+.nav-item{
+    margin: 0 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3c4043;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+.user-header .navbar .nav-menu .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3c4043;
+}
+
+/* set css action */
+.nav-action {
+    display: flex;
+    right: 30px;
+    position: absolute;
+}
+.user-header .navbar .nav-action .action-register {
+    margin-right: .5em;
+    border: 1px solid #404080;
+    color: #404080;
+}
+
+.MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.user-header .navbar .nav-action .action-login {
+    text-transform: none;
+    background-color: #404080;
+    border-radius: 3px;
+    color: #fff;
+}
