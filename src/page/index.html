@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="../css/screen.css" asp-append-version="true" />
   </head>
   <body>
     <div class="root">
       <div class="app">
         <div class="user-layout-wrapper">
-          <header class="user-header">
+            <header class="user-header">
+              <div class="MuiContainer-root MuiContainer-maxWidthLg">
               <nav class="navbar">
                 <a class="nav-logo"><img src="https://ninequiz.com/static/media/logo.d1fd6936.svg" alt="Logo" style="height: 50px"/></a>
                 <ul class="nav-menu">
@@ -40,16 +42,145 @@
                     <a class="nav-link" href="/en/contact">Contact</a>
                   </li>
                 </ul>
+                <ul class="nav-menu-mobile">
+                  <li class="nav-item"><a class="nav-link" href="/feature">Tính năng</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/policy/termprivacy">Điều khoản bảo mật</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/policy/termofuse">Điều khoản sử dụng</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/document">Hướng dẫn sử dụng</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/blog">Tin tức</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/contact">Liên hệ</a></li>
+                  <li><div class="nav-menu-mobile__cta-group"><button class="MuiButtonBase-root MuiButton-root MuiButton-text nav-menu-mobile__cta-register" tabindex="0" type="button"><span class="MuiButton-label">Đăng ký</span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-text nav-menu-mobile__cta-login" tabindex="0" type="button"><span class="MuiButton-label">Đăng nhập</span><span class="MuiTouchRipple-root"></span></button></div></li>
+                </ul>
                 <div class="nav-action">
                   <div class="action">
                     <btn class="action-register"> Đăng Ký </btn>
                     <btn class="action-login"> Đăng Nhập </btn>
                 </div>
+                <div class="hamburger">
+                  <div class="MuiGrid-root MuiGrid-container">
+                    <div class="MuiGrid-root pl-15 MuiGrid-item MuiGrid-grid-md-12">
+                      <div>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </nav>
+            </div>
           </header>
-        </div>
+          <div class=content style="height: 800px;"></div>
+          <div class="FooterUser-wrapper">
+            <div class="MuiContainer-root MuiContainer-maxWidthLg">
+               <div class="MuiGrid-root information-wrapper MuiGrid-container">
+                  <div class="MuiGrid-root information-detail MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-5 MuiGrid-grid-lg-5">
+                     <h2 class="title-detail">Thông tin liên hệ</h2>
+                     <div class="contents">
+                        <div class="content">
+                           <img src="https://ninequiz.com/static/media/phone.a413e8de.svg" alt="">
+                           <p>028 22188 009</p>
+                        </div>
+                        <div class="content">
+                           <img src="https://ninequiz.com/static/media/smart-phone.5e618f40.svg" alt="">
+                           <p>086 868 5247</p>
+                        </div>
+                        <div class="content">
+                           <img src="https://ninequiz.com/static/media/email.b6eaa7e0.svg" alt="">
+                           <p>Info@ninecode.vn</p>
+                        </div>
+                        <div class="content">
+                           <img src="https://ninequiz.com/static/media/location.7d4e386e.svg" alt="">
+                           <p>781/c1 Lê Hồng Phong, P. 12, Quận. 10, TP. HCM</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="MuiGrid-root information-others MuiGrid-item MuiGrid-grid-sm-12 MuiGrid-grid-md-7 MuiGrid-grid-lg-7">
+                     <div class="MuiGrid-root MuiGrid-container">
+                        <div class="MuiGrid-root description MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 MuiGrid-grid-lg-4">
+                           <h2 class="title">Điều khoản</h2>
+                           <div class="contents">
+                              <a href="/policy/termofuse" target="_blank" class="content">
+                                 <p>Điều khoản sử dụng</p>
+                              </a>
+                              <a href="/policy/termprivacy" target="_blank" class="content">
+                                 <p>Điều khoản bảo mật thông tin</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="MuiGrid-root description MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 MuiGrid-grid-lg-4">
+                           <h2 class="title">Hướng dẫn</h2>
+                           <div class="contents">
+                              <a href="/document" target="_blank" class="content">
+                                 <p>Hướng dẫn</p>
+                              </a>
+                              <a href="/contact" target="_blank" class="content">
+                                 <p>Liên hệ hỗ trợ</p>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="MuiGrid-root description MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-4 MuiGrid-grid-lg-4">
+                           <h2 class="title">Sản phẩm khác</h2>
+                           <div class="contents">
+                              <a href="http://ninebooking.one/" target="_blank" class="content">
+                                 <p>NineBooking</p>
+                              </a>
+                              <a href="http://ninetick.one/" target="_blank" class="content">
+                                 <p>Nine Tick</p>
+                              </a>
+                              <a href="https://ninecard.one/" target="_blank" class="content">
+                                 <p>Card Visit Online</p>
+                              </a>
+                              <a href="https://qrcode-gen.com/" target="_blank" class="content">
+                                 <p>QR code</p>
+                              </a>
+                              <a href="https://ninecode.vn/" target="_blank" class="content">
+                                 <p>Software consultant</p>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="license-wrapper">
+                  <div>
+                     <div class="container-select-lang" style="display: block;">
+                        <div class="cls-select-lang-header">
+                           <div class="MuiGrid-root MuiGrid-container">
+                              <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-3">
+                                 <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="color: rgb(179, 179, 179); font-size: 30px;">
+                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path>
+                                 </svg>
+                              </div>
+                              <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-9" style="padding-left: 10px;">
+                                 <div class="MuiInputBase-root MuiInput-root">
+                                    <div class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input" tabindex="0" role="button" aria-haspopup="listbox">Tiếng Việt</div>
+                                    <input aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput" value="vi">
+                                    <svg class="MuiSvgIcon-root MuiSelect-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                       <path d="M7 10l5 5 5-5z"></path>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="license-wrapper-left">
+                     <p><span>Ninequiz</span>. một sản phẩm của Ninecode jsc</p>
+                  </div>
+                  <div class="license-wrapper-right">
+                     <ul class="footer-user__nav">
+                        <li class="footer-user__nav-item"><a href="/">Trang chủ</a></li>
+                        <li class="footer-user__nav-item"><a href="/policy/termofuse">Điều khoản sử dụng</a></li>
+                        <li class="footer-user__nav-item"><a href="/policy/termprivacy">Chính sách bảo mật</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
       </div>
     </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>

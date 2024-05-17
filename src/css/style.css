@@ -27,7 +27,9 @@ body {
 }
 .user-header .navbar .nav-logo img {
     margin-right: 1em;
-    height: 90px !important;
+    /* height: 90px !important; */
+    min-height: 90px;
+    min-width: 90px;
 }
 .user-header .navbar li{
     list-style: none;
@@ -73,13 +75,14 @@ body {
 /* set css action */
 .nav-action {
     display: flex;
-    right: 30px;
-    position: absolute;
 }
 .user-header .navbar .nav-action .action-register {
     margin-right: .5em;
     border: 1px solid #404080;
     color: #404080;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    font-weight: 500;
 }
 
 .MuiGrid-container {
@@ -93,4 +96,100 @@ body {
     background-color: #404080;
     border-radius: 3px;
     color: #fff;
+    padding: 6px 10px 6px 10px;
+}
+.MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+    
+.hamburger .MuiGrid-container {
+    align-items: center;
+}
+.MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+}
+.user-header .navbar .nav-menu-mobile {
+    display: none;
+}
+
+/* set css foooter */
+.FooterUser-wrapper {
+    background: #ececec;
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+.FooterUser-wrapper .information-wrapper {
+    border-bottom: 1px solid #bfbfbf;
+}
+.MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+}
+.FooterUser-wrapper .information-wrapper .information-detail .title-detail {
+    margin-bottom: 1.25em;
+    color: #3c4043;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.contents {
+    display: contents;
+}
+.FooterUser-wrapper .information-wrapper .information-detail .contents .content {
+    margin-bottom: 1.25em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.FooterUser-wrapper .information-wrapper .information-detail .contents .content img {
+    margin-right: 1em;
+    width: 24px;
+    height: 24px;
+}
+.FooterUser-wrapper .information-wrapper .information-others .contents .content p {
+    color: #888787;
+    font-size: 14px;
+}
+audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+}
+img {
+    border-style: solid;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+.FooterUser-wrapper .license-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    grid-gap: 73px;
+    gap: 73px;
+}
+.FooterUser-wrapper .information-wrapper .information-others .title {
+    margin-bottom: 1.25em;
+    color: var(--clr-primary-black);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
 }
