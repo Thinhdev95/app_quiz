@@ -1,8 +1,47 @@
+@media only screen and (max-width: 600px) {
+    .FooterUser-wrapper .information-wrapper .information-others .title {
+        margin-bottom: 1.25em;
+        color: #000;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .user-header .navbar .nav-logo {
+        flex-grow: 10;
+    }
+    .user-header .navbar .nav-logo img {
+        margin-right: 1em;
+    }
+    .FooterUser-wrapper .license-wrapper {
+        margin-top: 1em;
+        display: block;
+    }
+    .FooterUser-wrapper .information-wrapper .information-others .contents .content {
+        margin-bottom: 1.25em;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+    .FooterUser-wrapper .information-wrapper .information-others .contents .content {
+        margin-bottom: 1.25em;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
 @media (min-width: 600px) {
         .MuiGrid-grid-sm-12 {
             flex-grow: 0;
             max-width: 100%;
             flex-basis: 100%;
+        }
+        .MuiGrid-grid-sm-4 {
+            flex-grow: 0;
+            max-width: 33.333333%;
+            flex-basis: 33.333333%;
         }
     }
 
@@ -27,6 +66,18 @@
         flex-basis: 58.333333%;
     }
 }
+@media (min-width: 960px) {
+        .MuiGrid-grid-md-3 {
+            flex-grow: 0;
+            max-width: 25%;
+            flex-basis: 25%;
+        }
+        .MuiGrid-grid-md-9 {
+            flex-grow: 0;
+            max-width: 75%;
+            flex-basis: 75%;
+        }
+    }
 @media(max-width: 1200px){
     /* Set header */
     .user-header .navbar .nav-action .action {
