@@ -22,6 +22,8 @@
         align-items: center;
         text-decoration: none;
     }
+    /* css being-content */
+   
 }
 @media only screen and (min-width: 600px) and (max-width: 960px) {
     .FooterUser-wrapper .information-wrapper .information-others .contents .content {
