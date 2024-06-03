@@ -1,6 +1,3 @@
-
-<!-- remve class responsi  -->
-
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +11,8 @@
    <script src="https://cdn.tailwindcss.com"></script>
    <link rel="stylesheet" href="../css/style.css" asp-append-version="true" />
    <link rel="stylesheet" href="../css/screen.css" asp-append-version="true" />
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -22,328 +20,39 @@
       <div class="app">
          <div class="user-layout-wrapper">
             <div class="user-header">
-               <div class="MuiContainer-root MuiContainer-maxWidthLg">
-                  <nav class="navbar">
-                     <a class="nav-logo"><img src="https://ninequiz.com/static/media/logo.d1fd6936.svg" alt="Logo"
-                           style="height: 50px" /></a>
-                     <ul class="nav-menu">
-                        <li class="nav-item">
-                           <a class="nav-link" href="/en/feature">Feature</a>
-                        </li>
-                        <li class="nav-item">
-                           <div class="dropdown">
-                              <div class="dropbtn">Policy</div>
-                              <div class="dropdown-content">
-                                 <a href="/en/policy/termprivacy">Privacy Policy</a><a href="/en/policy/termofuse">Terms
-                                    of Use</a>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="/en/document">Documents</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="/en/blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="/en/contact">Contact</a>
-                        </li>
-                     </ul>
-                     <ul class="nav-menu-mobile">
-                        <li class="nav-item"><a class="nav-link" href="/feature">Tính năng</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/policy/termprivacy">Điều khoản bảo mật</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/policy/termofuse">Điều khoản sử dụng</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/document">Hướng dẫn sử dụng</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog">Tin tức</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/contact">Liên hệ</a></li>
-                        <li>
-                           <div class="nav-menu-mobile__cta-group"><button
-                                 class="MuiButtonBase-root MuiButton-root MuiButton-text nav-menu-mobile__cta-register"
-                                 tabindex="0" type="button"><span class="MuiButton-label">Đăng ký</span><span
-                                    class="MuiTouchRipple-root"></span></button><button
-                                 class="MuiButtonBase-root MuiButton-root MuiButton-text nav-menu-mobile__cta-login"
-                                 tabindex="0" type="button"><span class="MuiButton-label">Đăng nhập</span><span
-                                    class="MuiTouchRipple-root"></span></button></div>
-                        </li>
-                     </ul>
-                     <div class="nav-action">
-                        <div class="action">
-                           <btn class="action-register"> Đăng Ký </btn>
-                           <btn class="action-login"> Đăng Nhập </btn>
-                        </div>
-                        <div class="hamburger">
-                           <div class="MuiGrid-root MuiGrid-container">
-                              <div class="MuiGrid-root pl-15 MuiGrid-item MuiGrid-grid-md-12">
-                                 <div>
-                                    <span class="bar"></span>
-                                    <span class="bar"></span>
-                                    <span class="bar"></span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                  </nav>
+               <div class="flex flex-row" style="width: 100%;">
+                  <div class="basis-1/6 flex" style="left: 10%">
+                     <span> X </span>
+                  </div>
+                  <div class="basis-4/6 flex " style="justify-content: center;">
+                     <div class="pr-4"><span> Exam</span></div>
+                     <div class="pr-4"><span> Subs</span></div>
+                  </div>
+                  <div class="basis-1/6 flex " style="justify-content: center;">
+                     <div class="pr-4"><span> Exam</span></div>
+                     <div class="pr-4"><span> Subs</span></div>
+                     <div class="pr-4"><span> Exam</span></div>
+                     <div class="pr-4"><span> Subs</span></div>
+                     <div class="pr-4"><span> Subs</span></div>
+                  </div>
                </div>
             </div>
-            <div class="container mx-auto ">
-               <div class="content-exam-list" style="padding-top: 80px;">
-                  <div class="border-b border-gray-200">
-                     <ul class="flex" id="tabs">
-                        <li class="mr-1">
-                           <a class="inline-block py-2 px-4 text-blue-500 font-semibold hover:text-blue-800"
-                              href="#tab1">Exam</a>
-                        </li>
-                        <li class="mr-1">
-                           <a class="inline-block py-2 px-4 text-gray-500 hover:text-blue-800" href="#tab2">History</a>
-                        </li>
-                        <li class="mr-1">
-                           <a class="inline-block py-2 px-4 text-gray-500 hover:text-blue-800" href="#tab3">Category</a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div id="tab-contents">
-                     <div id="tab1" class="p-4">
-                        <div class="action">
-                           <div class="btn-action text-right">
-                              <button type="button" class="focus:outline-none text-white bg-[#404080] hover:bg-purple-800 focus:ring-4 
-                              focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 
-                              dark:focus:ring-purple-900">Danh sách Example
-                              <span class="material-symbols-outlined" style="vertical-align:middle; font-size: 20px;">add</span>
-                              </button>
-                           </div>
+            <div class="container mx-auto flex">
+               <div
+                  class="mt-4 mx-auto mb-20 flex-grow-0 flex-shrink-0 basis-[900px] px-4 py-0 overflow-x-hidden !important">
+                  <div class="form-add-exam" style="margin-top: 120px;height: 300px; background-color: antiquewhite;">
+                     <div class="paper">
+                        <div class="flex flex-row collapsible" style="width: 100%; min-height: 56px;">
+                           <span style="justify-content: center;">General information</span>
                         </div>
-                        <div class="current-happening">
-                           <p style="font-size: larger; font-weight: 600;"> Currently happening </p>
-                           <div style="background-color: rgba(0,0,0,0.12); height: 1px; margin: 1rem 0px; ;"></div>
-                           <div class="content" style="padding-bottom: 25px;">
-                              <img style="max-width: 100%; height: auto; width: 120px; margin: 0 auto;" src="https://app.ninequiz.com/static/media/exam-empty-icon.ac923e16.jpg">
-                              <div style="text-align: center;">Currently, there is no ongoing quiz/exam</div>
-                           </div>
+                        <div class="content">
+
                         </div>
-                        <div class="being-composed">
-                           <p style="font-size: larger; font-weight: 600;"> Being composed </p>
-                           <div style="background-color: rgba(0,0,0,0.12); height: 1px; margin: 1rem 0px; ;"></div>
-                           <div class="md:lg:grid-cols-4 md:lg:gap-4 mb-2 md:lg:flex">
-                              <div class="w-full md:w1/2 lg:w-1/4 bg-opacity-100" style="padding: 20px; border-width: thin;">
-                                 <div style="padding-bottom: 20px;">
-                                    <p style="font-weight: 500; font-size: 20px;">Untitled test</p>
-                                 </div>
-                                 <div style="vertical-align: middle; padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Duration: 0 Minute</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Questtions: 0 Question</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Public</span>
-                                 </div>
-                                 <div style="margin: 20px;display: flex; justify-content: space-between; padding-right: 10%;" >
-                                    <span style="color:green">Being drafted</span>
-                                    <button style="text-align: right; opacity: 0.4;">
-                                       <svg class="MuiSvgIcon-root MuiSvgIcon-colorDisabled" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                                 
-                              </div>
-                              <div class="w-full md:w1/2 lg:w-1/4 bg-opacity-100" style="padding: 20px; border-width: thin;">
-                                 <div style="padding-bottom: 20px;">
-                                    <p style="font-weight: 500; font-size: 20px;">Untitled test</p>
-                                 </div>
-                                 <div style="vertical-align: middle; padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Duration: 0 Minute</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Questtions: 0 Question</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Public</span>
-                                 </div>
-                                 <div style="margin: 20px;display: flex; justify-content: space-between; padding-right: 10%;" >
-                                    <span style="color:green">Being drafted</span>
-                                    <button style="text-align: right; opacity: 0.4;">
-                                       <svg class="MuiSvgIcon-root MuiSvgIcon-colorDisabled" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                                 
-                              </div>
-                              <div class="w-full md:w1/2 lg:w-1/4 bg-opacity-100" style="padding: 20px; border-width: thin;">
-                                 <div style="padding-bottom: 20px;">
-                                    <p style="font-weight: 500; font-size: 20px;">Untitled test</p>
-                                 </div>
-                                 <div style="vertical-align: middle; padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Duration: 0 Minute</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Questtions: 0 Question</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Public</span>
-                                 </div>
-                                 <div style="margin: 20px;display: flex; justify-content: space-between; padding-right: 10%;" >
-                                    <span style="color:green">Being drafted</span>
-                                    <button style="text-align: right; opacity: 0.4;">
-                                       <svg class="MuiSvgIcon-root MuiSvgIcon-colorDisabled" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                                 
-                              </div>
-                              <div class="w-full md:w1/2 lg:w-1/4 bg-opacity-100" style="padding: 20px; border-width: thin;">
-                                 <div style="padding-bottom: 20px;">
-                                    <p style="font-weight: 500; font-size: 20px;">Untitled test</p>
-                                 </div>
-                                 <div style="vertical-align: middle; padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Duration: 0 Minute</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Questtions: 0 Question</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Public</span>
-                                 </div>
-                                 <div style="margin: 20px;display: flex; justify-content: space-between; padding-right: 10%;" >
-                                    <span style="color:green">Being drafted</span>
-                                    <button style="text-align: right; opacity: 0.4;">
-                                       <svg class="MuiSvgIcon-root MuiSvgIcon-colorDisabled" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                                 
-                              </div>
-                           </div>
-                           <div class=" mb-2 md:lg:grid-cols-4 md:lg:gap-4 md:lg:flex">
-                              <div class="w-full md:w1/2 lg:w-1/4 bg-opacity-100" style="padding: 20px; border-width: thin;">
-                                 <div style="padding-bottom: 20px;">
-                                    <p style="font-weight: 500; font-size: 20px;">Untitled test</p>
-                                 </div>
-                                 <div style="vertical-align: middle; padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Duration: 0 Minute</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Questtions: 0 Question</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Public</span>
-                                 </div>
-                                 <div style="margin: 20px;display: flex; justify-content: space-between; padding-right: 10%;" >
-                                    <span style="color:green">Being drafted</span>
-                                    <button style="text-align: right; opacity: 0.4;">
-                                       <svg class="MuiSvgIcon-root MuiSvgIcon-colorDisabled" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                                 
-                              </div>
-                              <div class="w-full md:w1/2 lg:w-1/4 bg-opacity-100" style="padding: 20px; border-width: thin;">
-                                 <div style="padding-bottom: 20px;">
-                                    <p style="font-weight: 500; font-size: 20px;">Untitled test</p>
-                                 </div>
-                                 <div style="vertical-align: middle; padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">16:41 - 14/05/24</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Duration: 0 Minute</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Questtions: 0 Question</span>
-                                 </div>
-                                 <div style="vertical-align: middle;padding: 5px;">
-                                    <span style="vertical-align: middle;" class="material-symbols-outlined">alarm</span> 
-                                    <span style="vertical-align: middle; padding-left: 10px;">Public</span>
-                                 </div>
-                                 <div style="margin: 20px;display: flex; justify-content: space-between; padding-right: 10%;" >
-                                    <span style="color:green">Being drafted</span>
-                                    <button style="text-align: right; opacity: 0.4;">
-                                       <svg class="MuiSvgIcon-root MuiSvgIcon-colorDisabled" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-                                          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                              </div>
-                              <div class="w-full md:w1/2 lg:w-1/4 bg-opacity-100" ></div>
-                              <div class="w-full md:w1/2 lg:w-1/4 bg-opacity-100" ></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="tab2" class="p-4 hidden">
-                        <h2 class="text-2xl font-bold mb-4">Tab 2 Content</h2>
-                        <p>Content for Tab 2 goes here.</p>
-                     </div>
-                     <div id="tab3" class="p-4 hidden">
-                        <h2 class="text-2xl font-bold mb-4">Tab 3 Content</h2>
-                        <p>Content for Tab 3 goes here.</p>
+
                      </div>
                   </div>
                </div>
+
             </div>
             <div>
                <div class="FooterUser-wrapper">
