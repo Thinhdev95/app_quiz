@@ -1,3 +1,12 @@
+.hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none; /* Vô hiệu hóa sự kiện cho phần tử ẩn */
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
 @media only screen and (max-width: 600px) {
     .FooterUser-wrapper .information-wrapper .information-others .title {
         margin-bottom: 1.25em;

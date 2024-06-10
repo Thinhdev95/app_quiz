@@ -42,18 +42,22 @@
                   px] px-4 py-0 overflow-x-hidden !important">
                   <div class="form-add-exam" style="margin-top: 120px; background-color: antiquewhite;">
                      <div class="paper">
-                        <div class="flex flex-row collapsible" style="width: 100%; min-height: 56px;">
+                        <!-- General info -->
+                        <div class="flex flex-row collapsible-general-1"
+                           style="width: 100%; min-height: 56px; font-size: large;">
                            <span
                               style="margin-top: auto; margin-bottom: auto; margin-left: 12px; font-weight: 600;">General
                               information</span>
                            <div
                               style=" margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 12px; font-weight: 600;">
-                              <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="false">
+                              <svg class="MuiSvgIcon-1 MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24"
+                                 aria-hidden="false">
                                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                               </svg>
                            </div>
                         </div>
-                        <div class="content" style="padding: 10px;">
+                        <div class="content-general-1"
+                           style="padding: 10px; transition-duration: 401ms; visibility: visible; opacity: 1; transform: opacity 0.5s ease;">
                            <div class="line" style="display: flex; padding: 10px">
                               <div class="icon">
                                  <img src="https://app.ninequiz.com/static/media/exam-title-icon.f8f2a92b.svg" alt="">
@@ -73,39 +77,42 @@
                               </div>
                            </div>
                            <div class="header-content" style="padding: 10px;">
-                              <span class="title" style="font-size: large; font-weight: 600;">Setting up the target audience for the test</span>
+                              <span class="title" style="font-size: large; font-weight: 600;">Setting up the target
+                                 audience for the test</span>
                            </div>
                            <!-- <div class="general-item-line inline-flex  md:lg:grid-cols-3 md:lg:gap-3 mb-2 md:lg:flex"></div> -->
-                            <div class="flex flex-row" style="width: 100%;">
+                           <div class="flex flex-row" style="width: 100%;">
                               <div class="basis-1/8 flex" style="left: 10%">
                                  <label class="inline-flex cursor-pointer">
-                                 <input type="checkbox" value="" class="sr-only peer">
-                                 <div
-                                    class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div
+                                       class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
                                  dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
                                  rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
                                  after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
                                   after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
-                                 </div>
-                              </label>
+                                    </div>
+                                 </label>
                               </div>
                               <div class="basis-5/8 flex " style="justify-content: center;">
                                  <div class="content-info-checkbox ms-3">
                                     <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
-                                       style="font-weight: 500;">Duration </p>
+                                       style="font-weight: 500;">Public</p>
                                     <p>
-                                       Time limit for completing the exam starting from the beginning
+                                       Anyone with this link can take the test
                                     </p>
                                     <div class="mt-4">
-                                       <a href="https://app.ninequiz.com/8168ZUR1" style="color: blue;">https://app.ninequiz.com/8168ZUR1</a>
+                                       <a href="https://app.ninequiz.com/8168ZUR1"
+                                          style="color: blue;">https://app.ninequiz.com/8168ZUR1</a>
                                     </div>
                                  </div>
                               </div>
                               <div class="basis-2/8 flex " style="justify-content: center;">
                                  <div class="action-handle-time pl-20">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                    <button
+                                       class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                        Share
-                                     </button>
+                                    </button>
                                  </div>
                               </div>
                            </div>
@@ -113,7 +120,48 @@
                            <div class="header-content" style="padding: 10px;">
                               <span class="title" style="font-size: large; font-weight: 600;">Setting up time</span>
                            </div>
-                            <div class="flex flex-row" style="width: 100%;">
+                           <!-- During -->
+                           <div class="flex flex-row " style="width: 100%; padding: 10px;">
+                              <div class="basis-1/8 flex" style="left: 10%">
+                                 <label class="inline-flex cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div
+                                       class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                     after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                    </div>
+                                 </label>
+                              </div>
+                              <div class="basis-5/8 flex " style="justify-content: left; width: 100%;">
+                                 <div class="content-info-checkbox ms-3">
+                                    <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                       style="font-weight: 500;">
+                                       Duration</p>
+                                    <p>
+                                       The regulation for the start time of an exam is that users cannot
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="basis-2/8 flex " style="justify-content: center; margin: auto;">
+                                 <div class="action-handle-time flex flex-row ">
+                                    <div class="basis-1/2">
+                                       <input type="time" id="time"
+                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                          min="09:00" max="18:00" value="00:00" required />
+                                    </div>
+                                    <div class="basis-1/2 pl-2">
+                                       <input type="time" id="time"
+                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                          min="09:00" max="18:00" value="00:00" required />
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- end -->
+                           <!-- Start time for the exam -->
+                           <div class="flex flex-row" style="width: 100%; padding: 10px">
                               <div class="basis-1/8 flex" style="left: 10%">
                                  <label class="inline-flex cursor-pointer">
                                     <input type="checkbox" value="" class="sr-only peer">
@@ -132,35 +180,250 @@
                                        style="font-weight: 500;">
                                        Start time for the exam </p>
                                     <p>
-                                       The regulation for the start time of an exam is that users cannot 
+                                       The regulation for the start time of an exam is that users cannot
                                        begin the exam before the designated start time
                                     </p>
                                  </div>
                               </div>
-                              <div class="basis-2/8 flex " style="justify-content: center;">
+                              <div class="basis-2/8 flex " style="justify-content: center; margin: auto">
                                  <div class="action-handle-time flex flex-row ">
                                     <div class="basis-1/2">
-                                       <div class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none">
-                                           <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                               <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z" clip-rule="evenodd"/>
-                                           </svg>
-                                       </div>
-                                       <input type="time" id="time" class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" min="09:00" max="18:00" value="00:00" required />
-                                   </div>
-                                   <div class="basis-1/2 pl-2">
-                                    <div class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none">
-                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                                            <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z" clip-rule="evenodd"/>
-                                        </svg>
+                                       <input type="time" id="time"
+                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                          min="09:00" max="18:00" value="00:00" required />
                                     </div>
-                                    <input type="time" id="time" class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" min="09:00" max="18:00" value="00:00" required />
-                                </div>
+                                    <div class="basis-1/2 pl-2">
+                                       <input type="time" id="time"
+                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                          min="09:00" max="18:00" value="00:00" required />
+                                    </div>
                                  </div>
                               </div>
                            </div>
-                           
-                        </div>
+                           <!-- end -->
+                           <!-- End time for the exam -->
+                           <div class="flex flex-row" style="width: 100%; padding: 10px">
+                              <div class="basis-1/8 flex" style="left: 10%">
+                                 <label class="inline-flex cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div
+                                       class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                     after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                    </div>
+                                 </label>
+                              </div>
+                              <div class="basis-5/8 flex " style="justify-content: center;">
+                                 <div class="content-info-checkbox ms-3">
+                                    <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                       style="font-weight: 500;">
+                                       End time for the exam </p>
+                                    <p>
+                                       The regulation for the end time of an exam is that users will not be able to
+                                       continue
+                                       the exam after the designated end time. If a user is in the middle of the exam,
+                                       the exam
+                                       will automatically stop and submit when this time is reached.
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="basis-2/8 flex " style="justify-content: center; margin: auto;">
+                                 <div class="action-handle-time flex flex-row ">
+                                    <div class="basis-1/2">
+                                       <input type="time" id="time"
+                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                          min="09:00" max="18:00" value="00:00" required />
+                                    </div>
+                                    <div class="basis-1/2 pl-2">
+                                       <input type="time" id="time"
+                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                          min="09:00" max="18:00" value="00:00" required />
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- end -->
 
+                        </div>
+                        <!-- End general info -->
+
+                        <!-- Advanced settings -->
+
+                        <div class="flex flex-row collapsible-general-2"
+                           style="width: 100%; min-height: 56px; padding-top: 20px; font-size: large;">
+                           <span
+                              style="margin-top: auto; margin-bottom: auto; margin-left: 12px; font-weight: 600;">Advanced
+                              settings</span>
+                           <div
+                              style=" margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 12px; font-weight: 600;">
+                              <svg class="MuiSvgIcon-2 MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24"
+                                 aria-hidden="false">
+                                 <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="content-general-2"
+                           style="padding: 10px; transition-duration: 401ms; visibility: visible; opacity: 1; transform: opacity 0.5s ease;">
+                           <div class="line" style="display: flex; padding: 10px">
+                              <p>Display multiple choice test results</p>
+                           </div>
+                           <div class="line" style="display: flex; padding: 10px">
+                              <div class="flex flex-row" style="width: 100%;">
+                                 <div class="basis-1/2 flex" style="left: 10%">
+                                    <div class="flex flex-row">
+                                       <div class="w-2/3 flex">
+                                          <p style="padding-right: 10%;">Maximum score for the exam</p>
+                                       </div>
+                                       <div class="w-1/3 flex">
+                                          <input type="text" value="0"
+                                             style="max-width: 50%; max-height: 50% ; text-align: center; justify-content: end; border-radius: 10px;" />
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="basis-1/2 flex" style="left: 10%">
+                                    <div class="flex flex-row" style="width: 100%;">
+                                       <div class="basis-1/8 flex" style="left: 10%">
+                                          <label class="inline-flex cursor-pointer">
+                                             <input type="checkbox" value="" class="sr-only peer">
+                                             <div
+                                                class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                           after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                             </div>
+                                          </label>
+                                       </div>
+                                       <div class="basis-7/8 flex " style="justify-content: center;">
+                                          <div class="content-info-checkbox ms-3">
+                                             <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                                style="font-weight: 600; font-size: medium;">The system will automatically grade/score the
+                                                exam</p>
+                                             <p>
+                                                The feature that automatically distributes points equally among
+                                                questions
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="line" style="display: flex; padding: 10px">
+                              <div class="flex flex-row" style="width: 100%;">
+                                 <div class="basis-1/2 flex" style="left: 10%">
+                                    <div class="w-full">
+                                       <p style="font-size: small; font-style: italic;"> The result will be displayed </p>
+                                       <form class="max-w-sm mx-auto">
+                                          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected>After the teacher has graded the exams</option>
+                                            <option value="US">After the designated time for taking the exam has elapsed</option>
+                                            <option value="CA">After the student submits their exam</option>
+                                          </select>
+                                        </form>
+                                    </div>
+                                 </div>
+                                 <div class="basis-1/2 flex" style="left: 10%">
+                                    <div class="flex flex-row" style="width: 100%;">
+                                       <div class="basis-1/8 flex" style="left: 10%">
+                                          <label class="inline-flex cursor-pointer">
+                                             <input type="checkbox" value="" class="sr-only peer">
+                                             <div
+                                                class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                           after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                             </div>
+                                          </label>
+                                       </div>
+                                       <div class="basis-7/8 flex " style="justify-content: center;">
+                                          <div class="content-info-checkbox ms-3">
+                                             <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                                style="font-weight: 600; font-size: medium;">Allow displaying student's answers / submissions</p>
+                                             <p>
+                                                If this feature is enabled, the test-takers will be able to see their exam submissions after they have been submitted. If it is disabled, they will only be able to see the exam content after the test has been graded
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>Display questions and answers</p>
+                           <div class="line" style="display: flex; padding: 10px">
+                              <div class="flex flex-row" style="width: 100%;">
+                                 <div class="basis-1/2 flex">
+                                    <div class="flex flex-row">
+                                       <div class="w-2/3 flex">
+                                          <p style="padding-right: 10%;">Question number</p>
+                                       </div>
+                                       <div class="w-1/3 flex">
+                                          <form class="max-w-sm mx-auto" style="padding-right: 14px;">
+                                             <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                               <option selected>A,B,C</option>
+                                               <option value="US">question-order-type.numeric</option>
+                                               <option value="CA">question-order-type.lowercase-alphabeta</option>
+                                               <option value="CA">question-order-type.uppercase-alphabeta</option>
+                                             </select>
+                                           </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="basis-1/2 flex">
+                                    <div class="flex flex-row" style=" width: 100%;">
+                                       <div class="w-2/3 flex">
+                                          <p style="padding-right: 10%;">Number of questions per page</p>
+                                       </div>
+                                       <div class="w-1/3 flex">
+                                          <form class="max-w-sm mx-auto" style="padding-right: 14px; width: 100%;">
+                                             <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                               <option selected>50</option>
+                                               <option value="US">100</option>
+                                               <option value="CA">150</option>
+                                               <option value="CA">200</option>
+                                             </select>
+                                           </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="line" style="display: flex; padding: 10px">
+                              <div class="flex flex-row" style="width: 100%;">
+                                 <div class="basis-1/2 flex">
+                                    <div class="flex flex-row w-full" >
+                                       <div class="w-2/3 flex">
+                                          <p style="padding-right: 10%;">Number of answers per row</p>
+                                       </div>
+                                       <div class="w-1/3 flex">
+                                          <form class="max-w-sm mx-auto" style="padding-right: 14px; width: 100%;">
+                                             <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                               <option selected>1</option>
+                                               <option value="US">2</option>
+                                               <option value="CA">3</option>
+                                               <option value="CA">4</option>
+                                             </select>
+                                           </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="basis-1/2 flex">
+                                    <div class="flex flex-row" style=" width: 100%;">
+                                       <div class="w-2/3 flex">
+                                          <p style="padding-right: 10%;">Number of submission attempts</p>
+                                       </div>
+                                       <div class="w-1/3 flex">
+                                          <input type="text" value="100" style="max-width: 90%; text-align: center; justify-content: end; border-radius: 10px; padding-right: 14px" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- End anvende setting -->
                      </div>
                   </div>
                </div>
