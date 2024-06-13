@@ -20,9 +20,9 @@
       <div class="app">
          <div class="user-layout-wrapper">
             <div class="user-header">
-               <div class="flex flex-row" style="width: 100%;">
-                  <div class="basis-2/6 flex" style="left: 10%">
-                     <svg style="cursor: pointer;" fill="#000000" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+               <div class="flex flex-row w-full h-full" style="box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);">
+                  <div class="basis-2/6 flex" style="padding-left: 5rem">
+                     <svg style="cursor: pointer;" fill="#000000" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                         viewBox="0 0 460.775 460.775" xml:space="preserve">
                         <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
                            c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
@@ -33,10 +33,10 @@
                      </svg>
                   </div>
                   <div class="basis-2/6 flex" style="justify-content: center;">
-                     <div class="pr-4"><span> Exam</span></div>
-                     <div class="pr-4"><span> Subs</span></div>
+                     <div class="hover:bg-blue-500" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 20%;"><span> Exam</span></div>
+                     <div class="hover:bg-blue-500" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 20%;"><span> Subsciption</span></div>
                   </div>
-                  <div class="basis-2/6 flex gap-5" style="justify-content: center;">
+                  <div class="basis-2/6 flex gap-5" style="justify-content: center; align-items: center;">
                      <div class="pr"><span> Exam</span></div>
                      <div class="pr"><span> Subs</span></div>
                      <div class="pr"><span> Exam</span></div>
@@ -45,712 +45,724 @@
                   </div>
                </div>
             </div>
-            <div class="container mx-auto flex">
-               <div class="mt-4 mx-auto mb-20 flex-grow-0 flex-shrink-0 lg:basis-[900px] md:basis-[768
-                  px] px-4 py-0 overflow-x-hidden !important">
-                  <div class="form-add-exam" style="margin-top: 120px; background-color: antiquewhite;">
-                     <div class="paper">
-                        <!-- General info -->
-                        <div class="flex flex-row collapsible-general-1"
-                           style="width: 100%; min-height: 56px; font-size: large;">
-                           <span
-                              style="margin-top: auto; margin-bottom: auto; margin-left: 12px; font-weight: 600;">General
-                              information</span>
-                           <div
-                              style=" margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 12px; font-weight: 600;">
-                              <svg class="MuiSvgIcon-1 MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24"
-                                 aria-hidden="false">
-                                 <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
-                              </svg>
-                           </div>
-                        </div>
-                        <div class="content-general-1"
-                           style="padding: 10px; transition-duration: 401ms; visibility: visible; opacity: 1; transform: opacity 0.5s ease;">
-                           <div class="line" style="display: flex; padding: 10px">
-                              <div class="icon">
-                                 <img src="https://app.ninequiz.com/static/media/exam-title-icon.f8f2a92b.svg" alt="">
-                              </div>
-                              <div class="input" style="width: 90%; margin-left: 20px;">
-                                 <input type="text" placeholder="Nhập..."
-                                    style="border-bottom: solid 1px; border-color: blueviolet; width: 100%; padding-left: 10px;">
-                              </div>
-                           </div>
-                           <div class="line" style="display: flex; padding: 10px">
-                              <div class="icon">
-                                 <img src="https://app.ninequiz.com/static/media/pen-icon.df1892cd.svg" alt="">
-                              </div>
-                              <div class="input" style="width: 90%; margin-left: 20px;">
-                                 <input type="text" placeholder="Nhập..." style="border-bottom: solid 1px; border-color: blueviolet;
-                                  width: 100%; padding-left: 10px; height: 80px; border-radius: 5px;">
-                              </div>
-                           </div>
-                           <div class="header-content" style="padding: 10px;">
-                              <span class="title" style="font-size: large; font-weight: 600;">Setting up the target
-                                 audience for the test</span>
-                           </div>
-                           <!-- <div class="general-item-line inline-flex  md:lg:grid-cols-3 md:lg:gap-3 mb-2 md:lg:flex"></div> -->
-                           <div class="flex flex-row" style="width: 100%;">
-                              <div class="basis-1/8 flex" style="left: 10%">
-                                 <label class="inline-flex cursor-pointer">
-                                    <input type="checkbox" value="" class="sr-only peer">
-                                    <div
-                                       class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                 rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                 after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                  after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
-                                    </div>
-                                 </label>
-                              </div>
-                              <div class="basis-5/8 flex " style="justify-content: center;">
-                                 <div class="content-info-checkbox ms-3">
-                                    <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
-                                       style="font-weight: 500;">Public</p>
-                                    <p>
-                                       Anyone with this link can take the test
-                                    </p>
-                                    <div class="mt-4">
-                                       <a href="https://app.ninequiz.com/8168ZUR1"
-                                          style="color: blue;">https://app.ninequiz.com/8168ZUR1</a>
-                                    </div>
+            <div class="content bg-[#f0f2f5]">
+               <div class="container mx-auto flex">
+                  <div class="mt-4 mx-auto mb-20 flex-grow-0 flex-shrink-0 lg:basis-[900px] md:basis-[768
+                     px] px-4 py-0 overflow-x-hidden !important">
+                     <div class="form-add-exam" style="margin-top: 120px;">
+                        <div class="paper">
+                           <!-- General info -->
+                           <div class="general-info bg-[#fff]" style="margin: 20px auto;">
+                              <div class="flex flex-row collapsible-general-1"
+                                 style="width: 100%; min-height: 56px; font-size: large;">
+                                 <span
+                                    style="margin-top: auto; margin-bottom: auto; margin-left: 12px; font-weight: 600;">General
+                                    information</span>
+                                 <div
+                                    style=" margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 12px; font-weight: 600;">
+                                    <svg class="MuiSvgIcon-1 MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24"
+                                       aria-hidden="false">
+                                       <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                    </svg>
                                  </div>
                               </div>
-                              <div class="basis-2/8 flex " style="justify-content: center;">
-                                 <div class="action-handle-time pl-20">
-                                    <button
-                                       class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                       Share
-                                    </button>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- Setting up time-->
-                           <div class="header-content" style="padding: 10px;">
-                              <span class="title" style="font-size: large; font-weight: 600;">Setting up time</span>
-                           </div>
-                           <!-- During -->
-                           <div class="flex flex-row " style="width: 100%; padding: 10px;">
-                              <div class="basis-1/8 flex" style="left: 10%">
-                                 <label class="inline-flex cursor-pointer">
-                                    <input type="checkbox" value="" class="sr-only peer">
-                                    <div
-                                       class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                     after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                              <div class="content-general-1"
+                                 style="padding: 10px; transition-duration: 401ms; visibility: visible; opacity: 1; transform: opacity 0.5s ease;">
+                                 <div class="line" style="display: flex; padding: 10px">
+                                    <div class="icon">
+                                       <img src="https://app.ninequiz.com/static/media/exam-title-icon.f8f2a92b.svg" alt="">
                                     </div>
-                                 </label>
-                              </div>
-                              <div class="basis-5/8 flex " style="justify-content: left; width: 100%;">
-                                 <div class="content-info-checkbox ms-3">
-                                    <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
-                                       style="font-weight: 500;">
-                                       Duration</p>
-                                    <p>
-                                       The regulation for the start time of an exam is that users cannot
-                                    </p>
-                                 </div>
-                              </div>
-                              <div class="basis-2/8 flex " style="justify-content: center; margin: auto;">
-                                 <div class="action-handle-time flex flex-row ">
-                                    <div class="basis-1/2">
-                                       <input type="time" id="time"
-                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                          min="09:00" max="18:00" value="00:00" required />
-                                    </div>
-                                    <div class="basis-1/2 pl-2">
-                                       <input type="time" id="time"
-                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                          min="09:00" max="18:00" value="00:00" required />
+                                    <div class="input" style="width: 90%; margin-left: 20px;">
+                                       <input type="text" placeholder="Nhập..."
+                                          style="border-bottom: solid 1px; border-color: blueviolet; width: 100%; padding-left: 10px;">
                                     </div>
                                  </div>
-                              </div>
-                           </div>
-                           <!-- end -->
-                           <!-- Start time for the exam -->
-                           <div class="flex flex-row" style="width: 100%; padding: 10px">
-                              <div class="basis-1/8 flex" style="left: 10%">
-                                 <label class="inline-flex cursor-pointer">
-                                    <input type="checkbox" value="" class="sr-only peer">
-                                    <div
-                                       class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                     after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                 <div class="line" style="display: flex; padding: 10px">
+                                    <div class="icon">
+                                       <img src="https://app.ninequiz.com/static/media/pen-icon.df1892cd.svg" alt="">
                                     </div>
-                                 </label>
-                              </div>
-                              <div class="basis-5/8 flex " style="justify-content: center;">
-                                 <div class="content-info-checkbox ms-3">
-                                    <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
-                                       style="font-weight: 500;">
-                                       Start time for the exam </p>
-                                    <p>
-                                       The regulation for the start time of an exam is that users cannot
-                                       begin the exam before the designated start time
-                                    </p>
-                                 </div>
-                              </div>
-                              <div class="basis-2/8 flex " style="justify-content: center; margin: auto">
-                                 <div class="action-handle-time flex flex-row ">
-                                    <div class="basis-1/2">
-                                       <input type="time" id="time"
-                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                          min="09:00" max="18:00" value="00:00" required />
-                                    </div>
-                                    <div class="basis-1/2 pl-2">
-                                       <input type="time" id="time"
-                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                          min="09:00" max="18:00" value="00:00" required />
+                                    <div class="input" style="width: 90%; margin-left: 20px;">
+                                       <input type="text" placeholder="Nhập..." style="border-bottom: solid 1px; border-color: blueviolet;
+                                       width: 100%; padding-left: 10px; height: 80px; border-radius: 5px;">
                                     </div>
                                  </div>
-                              </div>
-                           </div>
-                           <!-- end -->
-                           <!-- End time for the exam -->
-                           <div class="flex flex-row" style="width: 100%; padding: 10px">
-                              <div class="basis-1/8 flex" style="left: 10%">
-                                 <label class="inline-flex cursor-pointer">
-                                    <input type="checkbox" value="" class="sr-only peer">
-                                    <div
-                                       class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                    dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                    rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                    after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                     after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
-                                    </div>
-                                 </label>
-                              </div>
-                              <div class="basis-5/8 flex " style="justify-content: center;">
-                                 <div class="content-info-checkbox ms-3">
-                                    <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
-                                       style="font-weight: 500;">
-                                       End time for the exam </p>
-                                    <p>
-                                       The regulation for the end time of an exam is that users will not be able to
-                                       continue
-                                       the exam after the designated end time. If a user is in the middle of the exam,
-                                       the exam
-                                       will automatically stop and submit when this time is reached.
-                                    </p>
+                                 <div class="header-content" style="padding: 10px;">
+                                    <span class="title" style="font-size: large; font-weight: 600;">Setting up the target
+                                       audience for the test</span>
                                  </div>
-                              </div>
-                              <div class="basis-2/8 flex " style="justify-content: center; margin: auto;">
-                                 <div class="action-handle-time flex flex-row ">
-                                    <div class="basis-1/2">
-                                       <input type="time" id="time"
-                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                          min="09:00" max="18:00" value="00:00" required />
+                                 <!-- <div class="general-item-line inline-flex  md:lg:grid-cols-3 md:lg:gap-3 mb-2 md:lg:flex"></div> -->
+                                 <div class="flex flex-row" style="width: 100%;">
+                                    <div class="basis-1/8 flex" style="left: 10%">
+                                       <label class="inline-flex cursor-pointer">
+                                          <input type="checkbox" value="" class="sr-only peer">
+                                          <div
+                                             class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                       dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                       rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                       after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                       after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                          </div>
+                                       </label>
                                     </div>
-                                    <div class="basis-1/2 pl-2">
-                                       <input type="time" id="time"
-                                          class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                          min="09:00" max="18:00" value="00:00" required />
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- end -->
-
-                        </div>
-                        <!-- Advanced settings -->
-                        <div class="flex flex-row collapsible-general-2"
-                           style="width: 100%; min-height: 56px; padding-top: 20px; font-size: large;">
-                           <span
-                              style="margin-top: auto; margin-bottom: auto; margin-left: 12px; font-weight: 600;">Advanced
-                              settings</span>
-                           <div
-                              style=" margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 12px; font-weight: 600;">
-                              <svg class="MuiSvgIcon-2 MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24"
-                                 aria-hidden="false">
-                                 <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
-                              </svg>
-                           </div>
-                        </div>
-                        <div class="content-general-2"
-                           style="padding: 10px; transition-duration: 401ms; visibility: visible; opacity: 1; transform: opacity 0.5s ease;">
-                           <div class="line" style="display: flex; padding: 10px">
-                              <p>Display multiple choice test results</p>
-                           </div>
-                           <div class="line" style="display: flex; padding: 10px">
-                              <div class="flex flex-row" style="width: 100%;">
-                                 <div class="basis-1/2 flex" style="left: 10%">
-                                    <div class="flex flex-row">
-                                       <div class="w-2/3 flex">
-                                          <p style="padding-right: 10%;">Maximum score for the exam</p>
+                                    <div class="basis-5/8 flex " style="justify-content: center;">
+                                       <div class="content-info-checkbox ms-3">
+                                          <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                             style="font-weight: 500;">Public</p>
+                                          <p>
+                                             Anyone with this link can take the test
+                                          </p>
+                                          <div class="mt-4">
+                                             <a href="https://app.ninequiz.com/8168ZUR1"
+                                                style="color: blue;">https://app.ninequiz.com/8168ZUR1</a>
+                                          </div>
                                        </div>
-                                       <div class="w-1/3 flex">
-                                          <input type="text" value="0"
-                                             style="max-width: 50%; max-height: 50% ; text-align: center; justify-content: end; border-radius: 10px;" />
+                                    </div>
+                                    <div class="basis-2/8 flex " style="justify-content: center;">
+                                       <div class="action-handle-time pl-20">
+                                          <button
+                                             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                             Share
+                                          </button>
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="basis-1/2 flex" style="left: 10%">
-                                    <div class="flex flex-row" style="width: 100%;">
-                                       <div class="basis-1/8 flex" style="left: 10%">
-                                          <label class="inline-flex cursor-pointer">
-                                             <input type="checkbox" value="" class="sr-only peer">
-                                             <div
-                                                class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                 <!-- Setting up time-->
+                                 <div class="header-content" style="padding: 10px;">
+                                    <span class="title" style="font-size: large; font-weight: 600;">Setting up time</span>
+                                 </div>
+                                 <!-- During -->
+                                 <div class="flex flex-row " style="width: 100%; padding: 10px;">
+                                    <div class="basis-1/8 flex" style="left: 10%">
+                                       <label class="inline-flex cursor-pointer">
+                                          <input type="checkbox" value="" class="sr-only peer">
+                                          <div
+                                             class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
                                           dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
                                           rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
                                           after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                           after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
-                                             </div>
-                                          </label>
+                                          after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                          </div>
+                                       </label>
+                                    </div>
+                                    <div class="basis-5/8 flex " style="justify-content: left; width: 100%;">
+                                       <div class="content-info-checkbox ms-3">
+                                          <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                             style="font-weight: 500;">
+                                             Duration</p>
+                                          <p>
+                                             The regulation for the start time of an exam is that users cannot
+                                          </p>
                                        </div>
-                                       <div class="basis-7/8 flex " style="justify-content: center;">
-                                          <div class="content-info-checkbox ms-3">
-                                             <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
-                                                style="font-weight: 600; font-size: medium;">The system will
-                                                automatically grade/score the
-                                                exam</p>
-                                             <p>
-                                                The feature that automatically distributes points equally among
-                                                questions
+                                    </div>
+                                    <div class="basis-2/8 flex " style="justify-content: center; margin: auto;">
+                                       <div class="action-handle-time flex flex-row ">
+                                          <div class="basis-1/2">
+                                             <input type="time" id="time"
+                                                class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                min="09:00" max="18:00" value="00:00" required />
+                                          </div>
+                                          <div class="basis-1/2 pl-2">
+                                             <input type="time" id="time"
+                                                class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                min="09:00" max="18:00" value="00:00" required />
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- end -->
+                                 <!-- Start time for the exam -->
+                                 <div class="flex flex-row" style="width: 100%; padding: 10px">
+                                    <div class="basis-1/8 flex" style="left: 10%">
+                                       <label class="inline-flex cursor-pointer">
+                                          <input type="checkbox" value="" class="sr-only peer">
+                                          <div
+                                             class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                          after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                          </div>
+                                       </label>
+                                    </div>
+                                    <div class="basis-5/8 flex " style="justify-content: center;">
+                                       <div class="content-info-checkbox ms-3">
+                                          <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                             style="font-weight: 500;">
+                                             Start time for the exam </p>
+                                          <p>
+                                             The regulation for the start time of an exam is that users cannot
+                                             begin the exam before the designated start time
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="basis-2/8 flex " style="justify-content: center; margin: auto">
+                                       <div class="action-handle-time flex flex-row ">
+                                          <div class="basis-1/2">
+                                             <input type="time" id="time"
+                                                class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                min="09:00" max="18:00" value="00:00" required />
+                                          </div>
+                                          <div class="basis-1/2 pl-2">
+                                             <input type="time" id="time"
+                                                class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                min="09:00" max="18:00" value="00:00" required />
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- end -->
+                                 <!-- End time for the exam -->
+                                 <div class="flex flex-row" style="width: 100%; padding: 10px">
+                                    <div class="basis-1/8 flex" style="left: 10%">
+                                       <label class="inline-flex cursor-pointer">
+                                          <input type="checkbox" value="" class="sr-only peer">
+                                          <div
+                                             class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                          after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                          </div>
+                                       </label>
+                                    </div>
+                                    <div class="basis-5/8 flex " style="justify-content: center;">
+                                       <div class="content-info-checkbox ms-3">
+                                          <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                             style="font-weight: 500;">
+                                             End time for the exam </p>
+                                          <p>
+                                             The regulation for the end time of an exam is that users will not be able to
+                                             continue
+                                             the exam after the designated end time. If a user is in the middle of the exam,
+                                             the exam
+                                             will automatically stop and submit when this time is reached.
+                                          </p>
+                                       </div>
+                                    </div>
+                                    <div class="basis-2/8 flex " style="justify-content: center; margin: auto;">
+                                       <div class="action-handle-time flex flex-row ">
+                                          <div class="basis-1/2">
+                                             <input type="time" id="time"
+                                                class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                min="09:00" max="18:00" value="00:00" required />
+                                          </div>
+                                          <div class="basis-1/2 pl-2">
+                                             <input type="time" id="time"
+                                                class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                min="09:00" max="18:00" value="00:00" required />
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- end -->
+      
+                              </div>
+                           </div>
+                           <!-- Advanced settings -->
+                           <div class="advanced-settings bg-[#fff]" style="margin: 20px auto;">
+                              <div class="flex flex-row collapsible-general-2"
+                              style="width: 100%; min-height: 56px; font-size: large;">
+                              <span
+                                 style="margin-top: auto; margin-bottom: auto; margin-left: 12px; font-weight: 600;">Advanced
+                                 settings</span>
+                              <div
+                                 style=" margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 12px; font-weight: 600;">
+                                 <svg class="MuiSvgIcon-2 MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24"
+                                    aria-hidden="false">
+                                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                 </svg>
+                              </div>
+                              </div>
+                              <div class="content-general-2"
+                                 style="padding: 10px; transition-duration: 401ms; visibility: visible; opacity: 1; transform: opacity 0.5s ease;">
+                                 <div class="line" style="display: flex; padding: 10px">
+                                    <p>Display multiple choice test results</p>
+                                 </div>
+                                 <div class="line" style="display: flex; padding: 10px">
+                                    <div class="flex flex-row" style="width: 100%;">
+                                       <div class="basis-1/2 flex" style="left: 10%">
+                                          <div class="flex flex-row">
+                                             <div class="w-2/3 flex">
+                                                <p style="padding-right: 10%;">Maximum score for the exam</p>
+                                             </div>
+                                             <div class="w-1/3 flex">
+                                                <input type="text" value="0"
+                                                   style="max-width: 50%; max-height: 50% ; text-align: center; justify-content: end; border-radius: 10px;" />
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="basis-1/2 flex" style="left: 10%">
+                                          <div class="flex flex-row" style="width: 100%;">
+                                             <div class="basis-1/8 flex" style="left: 10%">
+                                                <label class="inline-flex cursor-pointer">
+                                                   <input type="checkbox" value="" class="sr-only peer">
+                                                   <div
+                                                      class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                                dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                                rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                                after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                                after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                                   </div>
+                                                </label>
+                                             </div>
+                                             <div class="basis-7/8 flex " style="justify-content: center;">
+                                                <div class="content-info-checkbox ms-3">
+                                                   <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                                      style="font-weight: 600; font-size: medium;">The system will
+                                                      automatically grade/score the
+                                                      exam</p>
+                                                   <p>
+                                                      The feature that automatically distributes points equally among
+                                                      questions
+                                                   </p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="line" style="display: flex; padding: 10px">
+                                    <div class="flex flex-row" style="width: 100%;">
+                                       <div class="basis-1/2 flex" style="left: 10%">
+                                          <div class="w-full">
+                                             <p style="font-size: small; font-style: italic;"> The result will be displayed
                                              </p>
+                                             <form class="max-w-sm mx-auto">
+                                                <select id="countries"
+                                                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                   <option selected>After the teacher has graded the exams</option>
+                                                   <option value="US">After the designated time for taking the exam has
+                                                      elapsed</option>
+                                                   <option value="CA">After the student submits their exam</option>
+                                                </select>
+                                             </form>
+                                          </div>
+                                       </div>
+                                       <div class="basis-1/2 flex" style="left: 10%">
+                                          <div class="flex flex-row" style="width: 100%;">
+                                             <div class="basis-1/8 flex" style="left: 10%">
+                                                <label class="inline-flex cursor-pointer">
+                                                   <input type="checkbox" value="" class="sr-only peer">
+                                                   <div
+                                                      class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                                dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                                rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                                after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                                after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                                   </div>
+                                                </label>
+                                             </div>
+                                             <div class="basis-7/8 flex " style="justify-content: center;">
+                                                <div class="content-info-checkbox ms-3">
+                                                   <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                                      style="font-weight: 600; font-size: medium;">Allow displaying student's
+                                                      answers / submissions</p>
+                                                   <p>
+                                                      If this feature is enabled, the test-takers will be able to see their
+                                                      exam submissions after they have been submitted. If it is disabled, they
+                                                      will only be able to see the exam content after the test has been graded
+                                                   </p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>Display questions and answers</p>
+                                 <div class="line" style="display: flex; padding: 10px">
+                                    <div class="flex flex-row" style="width: 100%;">
+                                       <div class="basis-1/2 flex">
+                                          <div class="flex flex-row">
+                                             <div class="w-2/3 flex">
+                                                <p style="padding-right: 10%;">Question number</p>
+                                             </div>
+                                             <div class="w-1/3 flex">
+                                                <form class="max-w-sm mx-auto" style="padding-right: 14px;">
+                                                   <select id="countries"
+                                                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                      <option selected>A,B,C</option>
+                                                      <option value="US">question-order-type.numeric</option>
+                                                      <option value="CA">question-order-type.lowercase-alphabeta</option>
+                                                      <option value="CA">question-order-type.uppercase-alphabeta</option>
+                                                   </select>
+                                                </form>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="basis-1/2 flex">
+                                          <div class="flex flex-row" style=" width: 100%;">
+                                             <div class="w-2/3 flex">
+                                                <p style="padding-right: 10%;">Number of questions per page</p>
+                                             </div>
+                                             <div class="w-1/3 flex">
+                                                <form class="max-w-sm mx-auto" style="padding-right: 14px; width: 100%;">
+                                                   <select id="countries"
+                                                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                      <option selected>50</option>
+                                                      <option value="US">100</option>
+                                                      <option value="CA">150</option>
+                                                      <option value="CA">200</option>
+                                                   </select>
+                                                </form>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="line" style="display: flex; padding: 10px">
+                                    <div class="flex flex-row" style="width: 100%;">
+                                       <div class="basis-1/2 flex">
+                                          <div class="flex flex-row w-full">
+                                             <div class="w-2/3 flex">
+                                                <p style="padding-right: 10%;">Number of answers per row</p>
+                                             </div>
+                                             <div class="w-1/3 flex">
+                                                <form class="max-w-sm mx-auto" style="padding-right: 14px; width: 100%;">
+                                                   <select id="countries"
+                                                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                      <option selected>1</option>
+                                                      <option value="US">2</option>
+                                                      <option value="CA">3</option>
+                                                      <option value="CA">4</option>
+                                                   </select>
+                                                </form>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="basis-1/2 flex">
+                                          <div class="flex flex-row" style=" width: 100%;">
+                                             <div class="w-2/3 flex">
+                                                <p style="padding-right: 10%;">Number of submission attempts</p>
+                                             </div>
+                                             <div class="w-1/3 flex">
+                                                <input type="text" value="100"
+                                                   style="max-width: 90%; text-align: center; justify-content: end; border-radius: 10px; padding-right: 14px" />
+                                             </div>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="line" style="display: flex; padding: 10px">
-                              <div class="flex flex-row" style="width: 100%;">
-                                 <div class="basis-1/2 flex" style="left: 10%">
-                                    <div class="w-full">
-                                       <p style="font-size: small; font-style: italic;"> The result will be displayed
-                                       </p>
+                           <!-- section1 -->
+                           <div class="section1 bg-[#fff]" style="margin: 20px auto;">
+                              <div class="flex flex-row collapsible-general-3" style="width: 100%; min-height: 56px; font-size: large;">
+                                 <span class="basis-2/3" style="margin-top: auto; margin-bottom: auto; margin-left: 12px; font-weight: 600;">Section 1
+                                 </span>
+                                 <div class="basis-1/3 flex" style=" margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 12px; font-weight: 600;">
+                                    <div>
+                                       <form class="max-w-sm mx-auto pr-5">
+                                          <select id="countries"
+                                             class="text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                             <option selected>Do not shuffle</option>
+                                             <option value="US">Shuffle questions</option>
+                                             <option value="CA">Shuffle questions and answers</option>
+                                          </select>
+                                       </form>
+                                    </div>
+                                    <div>
+                                       <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
+                                          class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                          type="button">
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                             fill="currentColor" viewBox="0 0 4 15">
+                                             <path
+                                                d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                          </svg>
+                                       </button>
+                                       <div id="dropdownDots"
+                                          class="z-10 bg-white hidden divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                                          style="position: absolute;">
+                                          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                             aria-labelledby="dropdownMenuIconButton">
+                                             <li>
+                                                <a href="#"
+                                                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                             </li>
+                                             <li>
+                                                <a href="#"
+                                                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                             </li>
+                                             <li>
+                                                <a href="#"
+                                                   class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                             </li>
+                                          </ul>
+                                          <div class="py-2">
+                                             <a href="#"
+                                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Separated
+                                                link</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="content-general-3" style="padding: 10px; transition-duration: 401ms; visibility: visible; opacity: 1; transform: opacity 0.5s ease;">
+                                 <div>
+                                    <input class="w-full p-2.5 mb-2 rounded-md" placeholder="Enter section title" />
+                                 </div>
+                                 <div>
+                                    <input class="w-full p-2.5 mb-2 rounded-md" placeholder="Enter description" />
+                                 </div>
+                              </div>
+                           </div>
+                         
+                           <!-- question show -->
+                           <div class="question-show-view p-5 bg-[#fff]">
+                              <div class="title-qs p-3">
+                                 <span class="text-lg font-semibold">Question 1:</span>
+                                 <span>property allows you to change the position of elements property allows you to change the position of elements.</span> 
+                              </div>
+                              <div class="form-qs text-lg pl-3" >
+                                 <div class="flex items-center mb-6">
+                                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-1" class="pl-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
+                                </div>
+                                <div class="flex items-center mb-6">
+                                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-2" class="pl-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+                                </div>
+                                <div class="flex items-center mb-6">
+                                    <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-3" class="pl-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
+                                 </div>
+                                 <div class="flex items-center">
+                                    <input checked id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="default-radio-4" class="pl-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+                                 </div>
+                              </div>
+                              <div class="pt-5 w-10">
+                                 <label class="-translate-y-2 translate-x-4 text-xs" style="position: absolute; background-color:white;" for="Scope">
+                                    Score
+                                 </label>
+                                 <input class="border-double border-2 border-indigo-400" value="0" style="max-width: 60px; text-align: center; height: 40px; border-radius: 10px;">
+                              </div>
+                           </div>
+                            <!-- question edit -->
+                           <div class="bg-[#fff]">
+                              <div class="question-show-edit p-5">
+                                 <div class="flex flex-row mb-2">
+                                    <div class="basis-4/5 flex pr-3 ">
+                                       <input  class="w-full p-2.5 mb-2 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
+                                    </div>
+                                    <div class="basis-1/5 flex">
                                        <form class="max-w-sm mx-auto">
                                           <select id="countries"
                                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                             <option selected>After the teacher has graded the exams</option>
-                                             <option value="US">After the designated time for taking the exam has
-                                                elapsed</option>
-                                             <option value="CA">After the student submits their exam</option>
+                                             <option selected>choose 1 answers</option>
+                                             <option value="US"> multil choose</option>
+                                             <option value="CA">upload file</option>
                                           </select>
                                        </form>
                                     </div>
                                  </div>
-                                 <div class="basis-1/2 flex" style="left: 10%">
-                                    <div class="flex flex-row" style="width: 100%;">
-                                       <div class="basis-1/8 flex" style="left: 10%">
+                                 <div class="flex flex-row mb-2">
+                                    <div class="basis-1/12 flex pr-3 items-center justify-center ">
+                                       <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    </div>
+                                    <div class="basis-8/12 flex pr-3">
+                                       <input  class="w-full p-2.5 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
+                                    </div>
+                                    <div class="basis-3/12 flex items-center">
+                                       <div class="basis-1/3">
                                           <label class="inline-flex cursor-pointer">
                                              <input type="checkbox" value="" class="sr-only peer">
                                              <div
                                                 class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                           after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                                dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                                rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                                after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                                after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
                                              </div>
                                           </label>
                                        </div>
-                                       <div class="basis-7/8 flex " style="justify-content: center;">
-                                          <div class="content-info-checkbox ms-3">
-                                             <p class="text-sm font-medium text-gray-900 dark:text-gray-300"
-                                                style="font-weight: 600; font-size: medium;">Allow displaying student's
-                                                answers / submissions</p>
-                                             <p>
-                                                If this feature is enabled, the test-takers will be able to see their
-                                                exam submissions after they have been submitted. If it is disabled, they
-                                                will only be able to see the exam content after the test has been graded
-                                             </p>
-                                          </div>
+                                       <div class="basis-1/3">
+                                          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
+                                             class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                             type="button">
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                             fill="currentColor" viewBox="0 0 4 15">
+                                             <path
+                                                d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                          </svg>
+                                       </button>
+                                       </div>
+                                       <div class="basis-1/3">
+                                          <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="flex flex-row mb-2">
+                                    <div class="basis-1/12 flex pr-3 items-center justify-center ">
+                                       <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    </div>
+                                    <div class="basis-8/12 flex pr-3">
+                                       <input  class="w-full p-2.5 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
+                                    </div>
+                                    <div class="basis-3/12 flex items-center">
+                                       <div class="basis-1/3">
+                                          <label class="inline-flex cursor-pointer">
+                                             <input type="checkbox" value="" class="sr-only peer">
+                                             <div
+                                                class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                                dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                                rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                                after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                                after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                             </div>
+                                          </label>
+                                       </div>
+                                       <div class="basis-1/3">
+                                          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
+                                             class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                             type="button">
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                             fill="currentColor" viewBox="0 0 4 15">
+                                             <path
+                                                d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                          </svg>
+                                       </button>
+                                       </div>
+                                       <div class="basis-1/3">
+                                          <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="flex flex-row mb-2">
+                                    <div class="basis-1/12 flex pr-3 items-center justify-center ">
+                                       <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    </div>
+                                    <div class="basis-8/12 flex pr-3">
+                                       <input  class="w-full p-2.5 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
+                                    </div>
+                                    <div class="basis-3/12 flex items-center">
+                                       <div class="basis-1/3">
+                                          <label class="inline-flex cursor-pointer">
+                                             <input type="checkbox" value="" class="sr-only peer">
+                                             <div
+                                                class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                                dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                                rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                                after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                                after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                             </div>
+                                          </label>
+                                       </div>
+                                       <div class="basis-1/3">
+                                          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
+                                             class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                             type="button">
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                             fill="currentColor" viewBox="0 0 4 15">
+                                             <path
+                                                d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                          </svg>
+                                       </button>
+                                       </div>
+                                       <div class="basis-1/3">
+                                          <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="flex flex-row mb-2">
+                                    <div class="basis-1/12 flex pr-3 items-center justify-center ">
+                                       <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    </div>
+                                    <div class="basis-8/12 flex pr-3">
+                                       <input  class="w-full p-2.5 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
+                                    </div>
+                                    <div class="basis-3/12 flex items-center">
+                                       <div class="basis-1/3">
+                                          <label class="inline-flex cursor-pointer">
+                                             <input type="checkbox" value="" class="sr-only peer">
+                                             <div
+                                                class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
+                                                dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+                                                rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
+                                                after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
+                                                after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
+                                             </div>
+                                          </label>
+                                       </div>
+                                       <div class="basis-1/3">
+                                          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
+                                             class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                             type="button">
+                                          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                             fill="currentColor" viewBox="0 0 4 15">
+                                             <path
+                                                d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                          </svg>
+                                       </button>
+                                       </div>
+                                       <div class="basis-1/3">
+                                          <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
                                        </div>
                                     </div>
                                  </div>
                               </div>
-                           </div>
-                           <p>Display questions and answers</p>
-                           <div class="line" style="display: flex; padding: 10px">
-                              <div class="flex flex-row" style="width: 100%;">
-                                 <div class="basis-1/2 flex">
-                                    <div class="flex flex-row">
-                                       <div class="w-2/3 flex">
-                                          <p style="padding-right: 10%;">Question number</p>
-                                       </div>
-                                       <div class="w-1/3 flex">
-                                          <form class="max-w-sm mx-auto" style="padding-right: 14px;">
-                                             <select id="countries"
-                                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                                <option selected>A,B,C</option>
-                                                <option value="US">question-order-type.numeric</option>
-                                                <option value="CA">question-order-type.lowercase-alphabeta</option>
-                                                <option value="CA">question-order-type.uppercase-alphabeta</option>
-                                             </select>
-                                          </form>
+                              <!-- button add question  -->
+                               <div class="pl-10 bg-[#fff]">
+                                 <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 
+                                 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                                 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Add question +</button>
+                               </div>
+                               <!-- score, delete -->
+                               <div class="flex flex-row  items-baseline p-5">
+                                    <div class="basis-10/12">
+                                       <div class="pt-5 w-10">
+                                          <label class="-translate-y-2 translate-x-4 text-xs" style="position: absolute; background-color:white;" for="Scope">
+                                             Score
+                                          </label>
+                                          <input class="border-double border-2 border-indigo-400" value="0" style="max-width: 60px; text-align: center; height: 40px; border-radius: 10px;">
                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="basis-1/2 flex">
-                                    <div class="flex flex-row" style=" width: 100%;">
-                                       <div class="w-2/3 flex">
-                                          <p style="padding-right: 10%;">Number of questions per page</p>
+                                    <div class="basis-2/12 flex">
+                                       <div class="basis-1/3">
+                                          <img src="https://app.ninequiz.com/static/media/reformat.1717190f.svg">
                                        </div>
-                                       <div class="w-1/3 flex">
-                                          <form class="max-w-sm mx-auto" style="padding-right: 14px; width: 100%;">
-                                             <select id="countries"
-                                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                                <option selected>50</option>
-                                                <option value="US">100</option>
-                                                <option value="CA">150</option>
-                                                <option value="CA">200</option>
-                                             </select>
-                                          </form>
+                                       <div class="basis-1/3">
+                                          <img src="https://app.ninequiz.com/static/media/file-copy-icon.80cced5a.svg">
+                                       </div>
+                                       <div class="basis-1/3">
+                                          <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="line" style="display: flex; padding: 10px">
-                              <div class="flex flex-row" style="width: 100%;">
-                                 <div class="basis-1/2 flex">
-                                    <div class="flex flex-row w-full">
-                                       <div class="w-2/3 flex">
-                                          <p style="padding-right: 10%;">Number of answers per row</p>
-                                       </div>
-                                       <div class="w-1/3 flex">
-                                          <form class="max-w-sm mx-auto" style="padding-right: 14px; width: 100%;">
-                                             <select id="countries"
-                                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                                <option selected>1</option>
-                                                <option value="US">2</option>
-                                                <option value="CA">3</option>
-                                                <option value="CA">4</option>
-                                             </select>
-                                          </form>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="basis-1/2 flex">
-                                    <div class="flex flex-row" style=" width: 100%;">
-                                       <div class="w-2/3 flex">
-                                          <p style="padding-right: 10%;">Number of submission attempts</p>
-                                       </div>
-                                       <div class="w-1/3 flex">
-                                          <input type="text" value="100"
-                                             style="max-width: 90%; text-align: center; justify-content: end; border-radius: 10px; padding-right: 14px" />
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
+                                </div>
                            </div>
                         </div>
-                        <!-- section1 -->
-                        <div class="flex flex-row collapsible-general-3 pb-4" style="width: 100%; min-height: 56px; padding-top: 20px; font-size: large;">
-                           <span class="basis-2/3" style="margin-top: auto; margin-bottom: auto; margin-left: 12px; font-weight: 600;">Section 1
-                           </span>
-                           <div class="basis-1/3 flex" style=" margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 12px; font-weight: 600;">
-                              <div>
-                                 <form class="max-w-sm mx-auto pr-5">
-                                    <select id="countries"
-                                       class="text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                       <option selected>Do not shuffle</option>
-                                       <option value="US">Shuffle questions</option>
-                                       <option value="CA">Shuffle questions and answers</option>
-                                    </select>
-                                 </form>
-                              </div>
-                              <div>
-                                 <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
-                                    class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                                    type="button">
-                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                       fill="currentColor" viewBox="0 0 4 15">
-                                       <path
-                                          d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-                                    </svg>
-                                 </button>
-                                 <div id="dropdownDots"
-                                    class="z-10 bg-white hidden divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-                                    style="position: absolute;">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                       aria-labelledby="dropdownMenuIconButton">
-                                       <li>
-                                          <a href="#"
-                                             class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                                       </li>
-                                       <li>
-                                          <a href="#"
-                                             class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                                       </li>
-                                       <li>
-                                          <a href="#"
-                                             class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                                       </li>
-                                    </ul>
-                                    <div class="py-2">
-                                       <a href="#"
-                                          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Separated
-                                          link</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                     </div>
+                  </div>
+                   <!-- footer action item -->
+                  <div class="tool-support-create" style="display: flex; position: fixed; padding: 7px 12px; bottom: 10px; right: 26%; background-color:white; box-shadow: 5px 5px 15px rgba(0, 0, 0, .15);
+                  border-radius: 5px;
+                  ">
+                     <div class="action-item-footer" style="display: flex;">
+                        <div class="p-2" style="display: flex; flex-direction: column; justify-items: center; align-items: center; gap: 5px; cursor: pointer;">
+                           <img style="width: 25px; height: auto; max-width: 100%;" src="https://app.ninequiz.com/static/media/layout-icon.e55b74f6.svg">
+                           <p style="font-size: 12px; color: #7c7a7a;">Section</p>
                         </div>
-                        <div class="content-general-3" style="padding: 10px; transition-duration: 401ms; visibility: visible; opacity: 1; transform: opacity 0.5s ease;">
-                           <div>
-                              <input class="w-full p-2.5 mb-2 rounded-md" placeholder="Enter section title" />
-                           </div>
-                           <div>
-                              <input class="w-full p-2.5 mb-2 rounded-md" placeholder="Enter description" />
-                           </div>
+                        <div class="p-2" style="display: flex; flex-direction: column; justify-items: center; align-items: center; gap: 5px; cursor: pointer;">
+                           <img  style="width: 25px; height: auto; max-width: 100%;" src="https://app.ninequiz.com/static/media/upload-file.13faf4fd.svg">
+                           <p style="font-size: 12px; color: #7c7a7a;">Upload files</p>
                         </div>
-                        <!-- question show -->
-                        <div class="question-show-view p-5">
-                           <div class="title-qs p-3">
-                              <span class="text-lg font-semibold">Question 1:</span>
-                              <span>property allows you to change the position of elements property allows you to change the position of elements.</span> 
-                           </div>
-                           <div class="form-qs text-lg pl-3" >
-                              <div class="flex items-center mb-6">
-                                 <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                 <label for="default-radio-1" class="pl-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
-                             </div>
-                             <div class="flex items-center mb-6">
-                                 <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                 <label for="default-radio-2" class="pl-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
-                             </div>
-                             <div class="flex items-center mb-6">
-                                 <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                 <label for="default-radio-3" class="pl-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
-                              </div>
-                              <div class="flex items-center">
-                                 <input checked id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                 <label for="default-radio-4" class="pl-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
-                              </div>
-                           </div>
-                           <div class="pt-5 w-10">
-                              <label class="-translate-y-2 translate-x-4 text-xs" style="position: absolute; background-color:white;" for="Scope">
-                                 Score
-                              </label>
-                              <input class="border-double border-2 border-indigo-400" value="0" style="max-width: 60px; text-align: center; height: 40px; border-radius: 10px;">
-                           </div>
+                        <div class="p-2" style="display: flex; flex-direction: column; justify-items: center; align-items: center; gap: 5px; cursor: pointer;">
+                           <img  style="width: 25px; height: auto; max-width: 100%;" src="https://app.ninequiz.com/static/media/folder-icon.e8b61122.svg">
+                           <p style="font-size: 12px; color: #7c7a7a;">Library</p>
                         </div>
-                         <!-- question edit -->
-                        <div class="question-show-edit p-5">
-                           <div class="flex flex-row mb-2">
-                              <div class="basis-4/5 flex pr-3 ">
-                                 <input  class="w-full p-2.5 mb-2 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
-                              </div>
-                              <div class="basis-1/5 flex">
-                                 <form class="max-w-sm mx-auto">
-                                    <select id="countries"
-                                       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                       <option selected>choose 1 answers</option>
-                                       <option value="US"> multil choose</option>
-                                       <option value="CA">upload file</option>
-                                    </select>
-                                 </form>
-                              </div>
-                           </div>
-                           <div class="flex flex-row mb-2">
-                              <div class="basis-1/12 flex pr-3 items-center justify-center ">
-                                 <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                              </div>
-                              <div class="basis-8/12 flex pr-3">
-                                 <input  class="w-full p-2.5 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
-                              </div>
-                              <div class="basis-3/12 flex items-center">
-                                 <div class="basis-1/3">
-                                    <label class="inline-flex cursor-pointer">
-                                       <input type="checkbox" value="" class="sr-only peer">
-                                       <div
-                                          class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                          after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
-                                       </div>
-                                    </label>
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
-                                       class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                                       type="button">
-                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                       fill="currentColor" viewBox="0 0 4 15">
-                                       <path
-                                          d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-                                    </svg>
-                                 </button>
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="flex flex-row mb-2">
-                              <div class="basis-1/12 flex pr-3 items-center justify-center ">
-                                 <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                              </div>
-                              <div class="basis-8/12 flex pr-3">
-                                 <input  class="w-full p-2.5 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
-                              </div>
-                              <div class="basis-3/12 flex items-center">
-                                 <div class="basis-1/3">
-                                    <label class="inline-flex cursor-pointer">
-                                       <input type="checkbox" value="" class="sr-only peer">
-                                       <div
-                                          class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                          after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
-                                       </div>
-                                    </label>
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
-                                       class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                                       type="button">
-                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                       fill="currentColor" viewBox="0 0 4 15">
-                                       <path
-                                          d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-                                    </svg>
-                                 </button>
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="flex flex-row mb-2">
-                              <div class="basis-1/12 flex pr-3 items-center justify-center ">
-                                 <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                              </div>
-                              <div class="basis-8/12 flex pr-3">
-                                 <input  class="w-full p-2.5 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
-                              </div>
-                              <div class="basis-3/12 flex items-center">
-                                 <div class="basis-1/3">
-                                    <label class="inline-flex cursor-pointer">
-                                       <input type="checkbox" value="" class="sr-only peer">
-                                       <div
-                                          class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                          after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
-                                       </div>
-                                    </label>
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
-                                       class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                                       type="button">
-                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                       fill="currentColor" viewBox="0 0 4 15">
-                                       <path
-                                          d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-                                    </svg>
-                                 </button>
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="flex flex-row mb-2">
-                              <div class="basis-1/12 flex pr-3 items-center justify-center ">
-                                 <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                              </div>
-                              <div class="basis-8/12 flex pr-3">
-                                 <input  class="w-full p-2.5 rounded-md border-b-2 divide-slate-200" placeholder="Enter the question content" />
-                              </div>
-                              <div class="basis-3/12 flex items-center">
-                                 <div class="basis-1/3">
-                                    <label class="inline-flex cursor-pointer">
-                                       <input type="checkbox" value="" class="sr-only peer">
-                                       <div
-                                          class="relative w-11 h-6 bg-[#888787] peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 
-                                          dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-                                          rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] ư
-                                          after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border
-                                          after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#404080]">
-                                       </div>
-                                    </label>
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
-                                       class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                                       type="button">
-                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                       fill="currentColor" viewBox="0 0 4 15">
-                                       <path
-                                          d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-                                    </svg>
-                                 </button>
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
-                                 </div>
-                              </div>
-                           </div>
+                        <div class="p-2" style="display: flex; flex-direction: column; justify-items: center; align-items: center; gap: 5px; cursor: pointer;">
+                           <img style="width: 25px; height: auto; max-width: 100%;"  src="https://app.ninequiz.com/static/media/artificial-intelligence.598b0e6d.svg">
+                           <p style="font-size: 12px; color: #7c7a7a;">AI</p>
                         </div>
-                        <!-- button add question  -->
-                         <div class="pl-10">
-                           <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 
-                           to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 
+                        <div class="flex justify-center items-center pl-5">
+                           <button type="button" class="text-white bg-[#404080]  hover:bg-[rgb(44,44,89)] focus:ring-4 focus:outline-none focus:ring-blue-300 
                            dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Add question +</button>
                          </div>
-                         <!-- score, delete -->
-                         <div class="flex flex-row  items-baseline p-5">
-                              <div class="basis-10/12">
-                                 <div class="pt-5 w-10">
-                                    <label class="-translate-y-2 translate-x-4 text-xs" style="position: absolute; background-color:white;" for="Scope">
-                                       Score
-                                    </label>
-                                    <input class="border-double border-2 border-indigo-400" value="0" style="max-width: 60px; text-align: center; height: 40px; border-radius: 10px;">
-                                 </div>
-                              </div>
-                              <div class="basis-2/12 flex">
-                                 <div class="basis-1/3">
-                                    <img src="https://app.ninequiz.com/static/media/reformat.1717190f.svg">
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <img src="https://app.ninequiz.com/static/media/file-copy-icon.80cced5a.svg">
-                                 </div>
-                                 <div class="basis-1/3">
-                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M13.3101 8.69531C12.9997 8.69531 12.748 8.94695 12.748 9.25737V19.8803C12.748 20.1906 12.9997 20.4424 13.3101 20.4424C13.6206 20.4424 13.8722 20.1906 13.8722 19.8803V9.25737C13.8722 8.94695 13.6206 8.69531 13.3101 8.69531Z" fill="#888787"></path><path d="M6.67827 8.69531C6.36785 8.69531 6.11621 8.94695 6.11621 9.25737V19.8803C6.11621 20.1906 6.36785 20.4424 6.67827 20.4424C6.98875 20.4424 7.24033 20.1906 7.24033 19.8803V9.25737C7.24033 8.94695 6.98875 8.69531 6.67827 8.69531Z" fill="#888787"></path><path d="M1.84438 7.14505V20.993C1.84438 21.8116 2.14452 22.5802 2.66881 23.1317C2.92697 23.4053 3.2382 23.6234 3.58349 23.7727C3.92877 23.922 4.30087 23.9994 4.67705 24.0001H15.3115C15.6877 23.9994 16.0598 23.9221 16.4051 23.7728C16.7504 23.6235 17.0616 23.4053 17.3197 23.1317C17.8441 22.5802 18.1441 21.8116 18.1441 20.993V7.14505C19.1864 6.8684 19.8617 5.86153 19.7224 4.79209C19.5827 3.72283 18.6718 2.92301 17.5933 2.92279H14.7156V2.22021C14.7172 1.92774 14.6607 1.63785 14.5494 1.36739C14.438 1.09693 14.2741 0.851277 14.067 0.6447C13.8599 0.438144 13.6138 0.274792 13.3431 0.164131C13.0723 0.0534698 12.7822 -0.00229572 12.4898 7.28574e-05H7.49882C7.20632 -0.00230318 6.91626 0.0534588 6.64549 0.16412C6.37471 0.274782 6.12862 0.438137 5.92151 0.6447C5.71446 0.851277 5.5505 1.09693 5.43917 1.36739C5.32783 1.63785 5.27133 1.92774 5.27295 2.22021V2.92279H2.39531C1.31683 2.92301 0.405896 3.72283 0.266224 4.79209C0.126833 5.86153 0.802149 6.8684 1.84438 7.14505ZM15.3115 22.8759H4.67711C3.7161 22.8759 2.9685 22.0504 2.9685 20.993V7.19445H17.02V20.993C17.02 22.0505 16.2725 22.8759 15.3115 22.8759ZM6.39707 2.22021C6.39524 2.07531 6.42253 1.93151 6.47733 1.79735C6.53213 1.66319 6.61333 1.54141 6.7161 1.43923C6.81883 1.33699 6.94105 1.25643 7.0755 1.20231C7.20996 1.1482 7.35391 1.12163 7.49882 1.12419H12.4898C12.6347 1.12163 12.7786 1.1482 12.9131 1.20231C13.0475 1.25643 13.1697 1.33699 13.2725 1.43923C13.3753 1.5414 13.4565 1.66318 13.5112 1.79734C13.566 1.9315 13.5933 2.07531 13.5915 2.22021V2.92279H6.39707V2.22021ZM2.39531 4.04691H17.5934C18.1521 4.04691 18.6051 4.49988 18.6051 5.05862C18.6051 5.61737 18.1521 6.07033 17.5934 6.07033H2.39525C1.83651 6.07033 1.38355 5.61737 1.38355 5.05862C1.38355 4.49988 1.83651 4.04691 2.39525 4.04691H2.39531Z" fill="#888787"></path><path d="M9.99468 8.69531C9.68425 8.69531 9.43262 8.94695 9.43262 9.25737V19.8803C9.43262 20.1906 9.68425 20.4424 9.99468 20.4424C10.3052 20.4424 10.5567 20.1906 10.5567 19.8803V9.25737C10.5567 8.94695 10.3052 8.69531 9.99468 8.69531Z" fill="#888787"></path></svg>
-                                 </div>
-                              </div>
-                          </div>
+                        </div>
                      </div>
                   </div>
-               </div>
-                <!-- footer action item -->
-               <div class="tool-support-create" style="display: flex; position: fixed; padding: 7px 12px; bottom: 10px; right: 26%; background-color:white; box-shadow: 5px 5px 15px rgba(0, 0, 0, .15);
-               border-radius: 5px;
-               ">
-                  <div class="action-item-footer" style="display: flex;">
-                     <div class="p-2" style="display: flex; flex-direction: column; justify-items: center; align-items: center; gap: 5px; cursor: pointer;">
-                        <img style="width: 25px; height: auto; max-width: 100%;" src="https://app.ninequiz.com/static/media/layout-icon.e55b74f6.svg">
-                        <p style="font-size: 12px; color: #7c7a7a;">Section</p>
-                     </div>
-                     <div class="p-2" style="display: flex; flex-direction: column; justify-items: center; align-items: center; gap: 5px; cursor: pointer;">
-                        <img  style="width: 25px; height: auto; max-width: 100%;" src="https://app.ninequiz.com/static/media/upload-file.13faf4fd.svg">
-                        <p style="font-size: 12px; color: #7c7a7a;">Upload files</p>
-                     </div>
-                     <div class="p-2" style="display: flex; flex-direction: column; justify-items: center; align-items: center; gap: 5px; cursor: pointer;">
-                        <img  style="width: 25px; height: auto; max-width: 100%;" src="https://app.ninequiz.com/static/media/folder-icon.e8b61122.svg">
-                        <p style="font-size: 12px; color: #7c7a7a;">Library</p>
-                     </div>
-                     <div class="p-2" style="display: flex; flex-direction: column; justify-items: center; align-items: center; gap: 5px; cursor: pointer;">
-                        <img style="width: 25px; height: auto; max-width: 100%;"  src="https://app.ninequiz.com/static/media/artificial-intelligence.598b0e6d.svg">
-                        <p style="font-size: 12px; color: #7c7a7a;">AI</p>
-                     </div>
-                     <div class="flex justify-center items-center pl-5">
-                        <button type="button" class="text-white bg-[#404080]  hover:bg-[rgb(44,44,89)] focus:ring-4 focus:outline-none focus:ring-blue-300 
-                        dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Add question +</button>
-                      </div>
-                     </div>
-                  </div>
-               </div>
+            </div>
+            
             </div>
          </div>
       </div>
